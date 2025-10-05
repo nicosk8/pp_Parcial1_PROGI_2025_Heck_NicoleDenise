@@ -1,5 +1,7 @@
 import os
 import funciones as fun
+import validaciones as val
+import impresiones as sc
 
 
 def aplicacion(lista_nombre_heroes_pp: list,
@@ -55,7 +57,7 @@ def aplicacion(lista_nombre_heroes_pp: list,
 
 
                 Ingrese una opcion -> """
-        opcion = fun.validar_num_minmax(mensaje,1,22)
+        opcion = val.validar_num_minmax(mensaje,1,22)
         print('\n')
         match opcion:
 
@@ -68,7 +70,7 @@ def aplicacion(lista_nombre_heroes_pp: list,
                                                     lista_poderes_pp, 
                                                     lista_inteligencias_pp, 
                                                     lista_velocidades_pp     )
-                matriz_cargada = fun.validar_matriz(matriz_personajes)
+                matriz_cargada = val.validar_matriz(matriz_personajes)
             
             case 2: 
                 if matriz_cargada:
@@ -79,8 +81,8 @@ def aplicacion(lista_nombre_heroes_pp: list,
                     
             case 3:      
                 if matriz_cargada:
-                    print(f'Detalle de los personajes cargados : {fun.obtener_existencias(matriz_personajes)}\n')
-                    fun.mostrar_datos(matriz_personajes)  
+                    print(f'Detalle de los personajes cargados : {val.obtener_existencias(matriz_personajes)}\n')
+                    sc.mostrar_datos(matriz_personajes)  
                 else: print(mensaje_error)
                     
             case 4:
@@ -96,7 +98,7 @@ def aplicacion(lista_nombre_heroes_pp: list,
 
                     indices_personajes_filtrados = fun.filtrar_distinto_de('Human',lista_razas_pp) # <- filtrar por raza != 'Human'
                     print(f'\nBuscar -> Distinto de "Human" hallado en cantidad de videos: {len(indices_personajes_filtrados)} \n')
-                    fun.imprimir_indices(matriz=matriz_personajes,
+                    sc.imprimir_indices(matriz=matriz_personajes,
                                          lista_indices = indices_personajes_filtrados)
 
                 else: print (mensaje_error)
@@ -104,8 +106,8 @@ def aplicacion(lista_nombre_heroes_pp: list,
             case 6:
                 if matriz_cargada:
 
-                    print(f'Detalle de los personajes cargados : {fun.obtener_existencias(matriz_personajes)}\n')
-                    fun.mostrar_datos_truncado(matriz_personajes)  
+                    print(f'Detalle de los personajes cargados : {val.obtener_existencias(matriz_personajes)}\n')
+                    sc.mostrar_datos_truncado(matriz_personajes)  
                 else: print(mensaje_error)
 
             case 7:
@@ -117,7 +119,7 @@ def aplicacion(lista_nombre_heroes_pp: list,
                     print(f'\nBuscar "Saiyan" personajes hallados: nombre, alias, raza, género, inteligencia, poder, velocidad')
                     lista_indices = fun.filtrar_indices_lista('Saiyan',lista_razas_pp)
                     matriz_filtrada = fun.obtener_matriz_filtrada(matriz_personajes,lista_indices)
-                    fun.mostrar_datos(matriz_filtrada)
+                    sc.mostrar_datos(matriz_filtrada)
 
                 else: print (mensaje_error)
 
