@@ -22,32 +22,23 @@ def validar_num_minmax(texto: str, minimo: int, maximo: int) -> int:
         input_usuario_str = validar_num_minmax(texto, minimo, maximo)
     return input_usuario
 
-def validar_texto(dato_a_validar: str):
-    """ Recibe un string y valida que no venga vacìo
+def validar_texto(dato_a_validar: str) -> str:
+    """ Recibe un string y valida que no venga vacìo y capitaliza la primera letra del string
     :params: dato_a_validar -> cadena de texto
     :returns: None
     """
     
-    texto = input(f'Ingrese {dato_a_validar}: ')
-   
-    while texto == '':
-        print(f'ERROR -> El {dato_a_validar} no debe estar vacio')
-        validar_texto(dato_a_validar)
-
-def validar_texto_ingresado_usuario(dato_a_validar: str):
-    """ Recibe un string y valida que no venga vacìo
-    :params: dato_a_validar -> cadena de texto
-    :returns: Retorna el texto ingresado por usuario
-    """
+    cadena = input(f'Ingrese {dato_a_validar}: ')
     
-    texto = input(f'Ingrese {dato_a_validar}: ')
-   
-    while texto == '':
+    while cadena == '':
         print(f'ERROR -> El {dato_a_validar} no debe estar vacio')
         validar_texto(dato_a_validar)
+    
+    texto = utn_capitalize(cadena)
+
     return texto
 
-def validar_numero(dato_a_validar: str):
+def validar_numero(dato_a_validar: str) -> int:
     """ Valida que lo que reciba es un numero entero. Recibe un string, valida que no venga vacìo y si es digito 
         convierte el caracter a numerico
     :params: dato_a_validar -> cadena de texto
@@ -59,11 +50,13 @@ def validar_numero(dato_a_validar: str):
         print(f'ERROR -> El {dato_a_validar} no debe estar vacio')
         validar_texto(dato_a_validar)
     
-    if not texto.isdigit():
+    if  texto.isnumeric() != True:
         print(f'ERROR -> Debe ingresar un numero')
+        validar_numero(dato_a_validar)
     
     numero = int(texto)
     texto = numero # <- input de usuario
+    return texto
 
 def utn_capitalize(texto: str) -> str:
     """ Recibe una  cadena de texto y capitaliza la primera letra: texto -> Texto
@@ -83,20 +76,23 @@ def formatear_texto_no_binario(texto_formateado: str) ->str:
         texto_formateado = 'No-Binario'
     return texto_formateado
 
-def formatear_texto(cadena: str) -> str:
-    """ recibe una cadena de texto y lo devuelve formateado, si viene vacìo lo pide devuelta.
-    :params: cadena -> mensaje que indica al usuario que debe ingresar
-    :returns: texto_formateado -> Devuelve el texto capitalizado -> "Masculino" o "No-binario" 
+def validar_genero(dato_a_validar: str) -> str:
+    """ Recibe un string y valida que no venga vacìo y capitaliza la primera letra del string
+    :params: dato_a_validar -> cadena de texto
+    :returns: None
     """
-    texto = validar_texto_ingresado_usuario(cadena)
-    texto_formateado = utn_capitalize(texto)
-    
-    # Formateo texto "No-Binario" - Especifico para el punto 2 del parcial
-    if texto_formateado != 'Masculino' or 'masculino':
-        texto_no_binario = formatear_texto_no_binario(texto_formateado)
-        texto_formateado = texto_no_binario
-    
-    return texto_formateado
+    cadena = input(f'Ingrese {dato_a_validar}: ')
+
+    while cadena == '':
+        print(f'ERROR -> El {dato_a_validar} no debe estar vacio')
+        validar_texto(dato_a_validar)
+
+    texto = utn_capitalize(cadena)
+    if texto != 'Masculino' :
+        texto_no_binario = formatear_texto_no_binario(texto)
+        texto = texto_no_binario
+
+    return texto
 
 def obtener_existencias(matriz: list[list]) -> int:
     """ Verifica si està cargada la matriz 

@@ -35,19 +35,18 @@ def agregar_nuevo_registro(matriz: list[list]) -> list:
     """
     Agrega un un registro a las listas existentes que conforman la matriz
     :params: matriz -> set de datos
-    :returns: Matriz con el nuevo registro
+    :returns: devuelve la lista de datos del registro nuevo 
     """
     lista_datos = [ # lista_datos = [ "Nicole", "Nicky", "Human" ,"No-Binario", 5000, 500, 500] <- TESTING
-#        val.val.validar_texto('nombre') ,
-#        val.validar_texto('alias') ,
-#        val.validar_texto('raza') ,
-#        #formatear_texto('genero -> Debe ser "Masculino" o  "No-Binario"') , 
-#        val.validar_texto('genero -> Debe ser "Masculino" o  "No-Binario"') ,
-#        val.validar_numero ('cantidad total de poder') , 
-#        val.validar_numero('cantidad total de inteligencia') , 
-#        val.validar_numero('cantidad total de velocidad')
+        val.validar_texto('nombre') ,
+        val.validar_texto('alias') ,
+        val.validar_texto('raza') ,
+        val.validar_genero('genero -> Debe ser "Masculino" o  "No-Binario"') ,
+        val.validar_numero ('cantidad total de poder') , 
+        val.validar_numero('cantidad total de inteligencia') , 
+        val.validar_numero('cantidad total de velocidad')
     ]
-    lista_datos = [ "Nicole", "Nicky", "Human" ,"No-Binario", 5000, 500, 500]
+
     for indice_fila in range( len(matriz)):
         matriz[indice_fila].append(lista_datos[indice_fila])
 
