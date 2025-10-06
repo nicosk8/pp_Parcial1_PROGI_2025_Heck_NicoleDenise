@@ -24,6 +24,9 @@ def validar_num_minmax(texto: str, minimo: int, maximo: int) -> int:
               (minimo > input_usuario or input_usuario > maximo):
                     print('\nSYSTEM ERROR: Ingrese un dato numerico valido')
                     input_usuario_str = validar_num_minmax(texto, minimo, maximo)
+                    if input_usuario_str.is_integer():
+                         input_usuario = input_usuario_str
+                         break
 
     return input_usuario
 
