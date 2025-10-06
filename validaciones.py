@@ -16,10 +16,15 @@ def validar_num_minmax(texto: str, minimo: int, maximo: int) -> int:
     :return: Devuelve un entero
     """
     input_usuario_str = input(texto)
-    input_usuario = int(input_usuario_str)
-    while (minimo > input_usuario or input_usuario > maximo) or input_usuario_str == '':
-        print('SYSTEM ERROR: Ingrese un numero valido')
-        input_usuario_str = validar_num_minmax(texto, minimo, maximo)
+    if input_usuario_str.isdigit() :
+        input_usuario = int(input_usuario_str)
+    else:
+        
+        while input_usuario_str.isalpha() or input_usuario_str == '' or\
+              (minimo > input_usuario or input_usuario > maximo):
+                    print('\nSYSTEM ERROR: Ingrese un dato numerico valido')
+                    input_usuario_str = validar_num_minmax(texto, minimo, maximo)
+
     return input_usuario
 
 def validar_texto(dato_a_validar: str) -> str:
