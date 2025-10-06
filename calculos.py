@@ -6,14 +6,15 @@ def obtener_promedio(matriz: list[list], indice_a_buscar: int) -> float:
              indice_a_buscar -> indice de la lista a leer
     :returns: Devuelve el promedio calculado
     """
-    cantidad_elementos = len(matriz[0])
+    cantidad_elementos = len(matriz[indice_a_buscar])
     suma_dato = 0
-
+    if cantidad_elementos < 1:
+           return 0
+    
     for numero in matriz[indice_a_buscar]:
         suma_dato += float(numero)
                     
-        if cantidad_elementos < 1:
-           return 0
+        
                     
     promedio = suma_dato / cantidad_elementos
     return promedio

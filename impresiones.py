@@ -14,7 +14,8 @@ def mostrar_elemento_matriz(matriz: list [list],indice_elemento: int):
     inteligencia = matriz[5][indice_elemento]
     velocidad = matriz[6][indice_elemento]
 
-    mensaje = f"""\nId: {indice_elemento}| Nombre : {nombre}, Alias: {alias}, Raza: {raza}, Gènero: {genero}, Poder: {poder}, Inteligencia: {inteligencia}, Velocidad: {velocidad} \n"""   
+    mensaje = f"""Id: {indice_elemento}| Nombre : {nombre}, Alias: {alias}, Raza: {raza}, Gènero: {genero}, Poder: {poder}, Inteligencia: {inteligencia}, Velocidad: {velocidad} """
+    #print('')   
     print(mensaje)
     
 def mostrar_datos(matriz: list[list]):
@@ -63,7 +64,7 @@ def imprimir_indices(lista_indices: list, matriz: list[list]):
         velocidad = matriz[6][indice]
         total += 1
         
-        mensaje = f"""Id: {indice}| Nombre : {nombre}, Alias: {alias}, Raza: {raza}, Gènero: {genero}, Poder: {poder}, Inteligencia: {inteligencia}, Velocidad: {velocidad} \n"""   
+        mensaje = f"""\nId: {indice}| Nombre : {nombre}, Alias: {alias}, Raza: {raza}, Gènero: {genero}, Poder: {poder}, Inteligencia: {inteligencia}, Velocidad: {velocidad} \n"""   
         print(mensaje)
-    mensaje = f'Total impresos: {total}'
+    mensaje = f'Total impresos: {total}\n'
     print(mensaje)
