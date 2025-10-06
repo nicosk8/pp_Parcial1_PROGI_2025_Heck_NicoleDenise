@@ -444,13 +444,7 @@ def calcular_promedios_raza_android(matriz: list[list], lista_razas_pp: list):
     indices_raza_android = filtrar_indices_lista('Android',lista_razas_pp)
     matriz_personajes_raza_android = obtener_matriz_filtrada(matriz, indices_raza_android)
 
-    cantidad_elementos = int(len(indices_raza_android))
-
-    if cantidad_elementos != int:
-        # si la lista esta vacia los promedios valen 0.
-        print('*** La lista esta vacia, no pueden calcularse los promedios. ***')
-        print(armar_informe_raza_android_promedios(promedio_poder = 0, 
-                                               promedio_inteligencia = 0))
+    cantidad_elementos = int(len(indices_raza_android))       
         
     if cantidad_elementos != 0: # contemplo que existan indices para calcular promedio
         if len(indices_raza_android) == 1:
@@ -476,8 +470,13 @@ def calcular_promedios_raza_android(matriz: list[list], lista_razas_pp: list):
             # Armo informe e imprimo.
 
             print(armar_informe_raza_android_promedios(promedio_poder, promedio_inteligencia))
-            sc.imprimir_indices( matriz_personajes_raza_android,
-                            indices_raza_android )
+            sc.imprimir_indices( matriz= matriz_personajes_raza_android,
+                            lista_indices= indices_raza_android )
+    else:
+        # si la lista esta vacia los promedios valen 0.
+        print('*** La lista esta vacia, no pueden calcularse los promedios. ***')
+        print(armar_informe_raza_android_promedios(promedio_poder = 0, 
+                                               promedio_inteligencia = 0))
 
 def armar_informe_filtrar_kryptonian(promedio_poder: float): 
     """ Arma titulos para informe 
@@ -589,7 +588,6 @@ def calcular_stats_personajes(matriz: list[list], lista_indices: list[int]) -> f
              lista_indices -> lista de indices
     :returns: Devuelve el valor calculado """
     if len(lista_indices) > 0:
-        #matriz_auxiliar = obtener_matriz_filtrada(matriz, lista_indices)
         promedio_poder = cal.obtener_promedio(matriz, indice_a_buscar = 4 )
         promedio_inteligencia = cal.obtener_promedio(matriz, indice_a_buscar = 5 )                                          
         promedio_velocidad = cal.obtener_promedio(matriz, indice_a_buscar = 6 )                                       
@@ -605,38 +603,27 @@ def filtrar_saiyan_power(matriz: list[list], lista_razas_pp: list):
         :returns: None"""
     # Filtro los de raza Saiyan y obtengo los promedios para calcular el indice de ataque de personaje raza Saiyan
     lista_indices_saiyan = filtrar_indices_lista('Saiyan', lista_razas_pp)
-    #lista_indices_saiyan = filtrar_distinto_de('Saiyan', lista_razas_pp)
     matriz_auxiliar = obtener_matriz_filtrada(matriz, lista_indices_saiyan)
     indice_ataque_saiyan = calcular_stats_personajes(matriz_auxiliar, lista_indices_saiyan)
     maximo_stat = indice_ataque_saiyan
     
     # para cualcular los stats de cada raza tengo oque saber cuantas razas tengo...
     # calculo stat de raza Desconocido
-    lista_ordenada = sort.ordenar_seleccion_sort_alfabeticamente_lista(lista_razas_pp,'ASC')
-    lista_indices_desconocido = armar_conjuntos_de_razas(lista_ordenada, valor='Desconocido')
-    #matriz_auxiliar = obtener_matriz_filtrada(matriz, lista_indices_desconocido)
+    lista_indices_desconocido = filtrar_indices_lista('Desconocido', lista_razas_pp)
     indice_ataque_raza_desconocido = calcular_stats_personajes(matriz, lista_indices_desconocido)
 
     # calculo stat de raza Animal
-    lista_ordenada = sort.ordenar_seleccion_sort_alfabeticamente_lista(lista_razas_pp,'ASC')
-    lista_indices_animal = armar_conjuntos_de_razas(lista_ordenada, valor='Animal')
-    matriz_auxiliar = obtener_matriz_filtrada(matriz, lista_indices_animal)
-    indice_ataque_raza_animal = calcular_stats_personajes(matriz_auxiliar, lista_indices_animal)
+    lista_indices_animal = filtrar_indices_lista('Animal', lista_razas_pp)
+    indice_ataque_raza_animal = calcular_stats_personajes(matriz, lista_indices_animal)
 
     # calculo stat de raza Human
-    lista_ordenada = sort.ordenar_seleccion_sort_alfabeticamente_lista(lista_razas_pp,'ASC')
-    lista_indices_human = armar_conjuntos_de_razas(lista_ordenada, valor='Human')
-    #matriz_auxiliar = obtener_matriz_filtrada(matriz, lista_indices_human)
+    lista_indices_human = filtrar_indices_lista('Human', lista_razas_pp)
     indice_ataque_raza_human = calcular_stats_personajes(matriz, lista_indices_human)
 
     # calculo stat de raza Mutant
-    lista_ordenada = sort.ordenar_seleccion_sort_alfabeticamente_lista(lista_razas_pp,'ASC')
-    lista_indices_mutant = armar_conjuntos_de_razas(lista_ordenada, valor='Mutant')
-    matriz_auxiliar = obtener_matriz_filtrada(matriz, lista_indices_mutant)
-    indice_ataque_raza_mutant = calcular_stats_personajes(matriz_auxiliar, lista_indices_mutant)
+    lista_indices_mutant = filtrar_indices_lista('Mutant', lista_razas_pp)
+    indice_ataque_raza_mutant = calcular_stats_personajes(matriz, lista_indices_mutant)
 
-    lista_stats_calculados = [indice_ataque_raza_desconocido, indice_ataque_raza_animal, indice_ataque_raza_human,
-                              indice_ataque_raza_mutant]
     titulo=\
     f"""\n\n15. Filtrar Saiyan Power: Mostrar la info de los personajes (que no sean raza Saiyan) cuyos stats 
         estén por debajo del índice de ataque Saiyan, obtenido de la ecuación (promedio poder + 
@@ -652,28 +639,41 @@ def filtrar_saiyan_power(matriz: list[list], lista_razas_pp: list):
     """
     print(titulo)
     
-    if len(lista_indices_desconocido) != 0:
-        if indice_ataque_raza_desconocido < maximo_stat:
-            sc.imprimir_indices(matriz, lista_indices_desconocido)
-
-    if len(lista_indices_animal) != 0:
-        if indice_ataque_raza_animal < maximo_stat:
-            sc.imprimir_indices(matriz, lista_indices_animal)
-    
-    if len(lista_indices_human) != 0:
-        if indice_ataque_raza_human < maximo_stat:
-            sc.imprimir_indices(matriz, lista_indices_human)
-
-    if len(lista_indices_mutant) != 0:
-        if indice_ataque_raza_mutant < maximo_stat:
-            sc.imprimir_indices(matriz, lista_indices_mutant)
-    
-    if (len(lista_indices_desconocido) or 
-       len(lista_indices_animal)       or 
-       len(lista_indices_human)        or
-       len(lista_indices_mutant)) != 0:
+    if (len(lista_indices_desconocido) and 
+       len(lista_indices_animal)       and 
+       len(lista_indices_human)        and
+       len(lista_indices_mutant)) == 0:
         mensaje = f'No existen razas cuyos stats superen el de raza Saiyan'
         print(mensaje)
+    else: 
+        if len(lista_indices_desconocido) >= 2:
+            if indice_ataque_raza_desconocido < maximo_stat:
+                sc.imprimir_indices(lista_indices_desconocido,matriz)
+        else: 
+            unico_elemento =  int(lista_indices_desconocido)
+            sc.mostrar_elemento_matriz(matriz, unico_elemento)
+
+        if len(lista_indices_animal) >= 2:
+            if indice_ataque_raza_animal < maximo_stat:
+                sc.imprimir_indices(lista_indices_animal, matriz)
+        else:
+            unico_elemento =  str(lista_indices_animal)
+            sc.mostrar_elemento_matriz(matriz,unico_elemento)
+        
+        if len(lista_indices_human) >= 2:
+            if indice_ataque_raza_human < maximo_stat:
+                sc.imprimir_indices(lista_indices_human, matriz)
+        else: 
+            unico_elemento =  int(lista_indices_human)
+            sc.mostrar_elemento_matriz(matriz, unico_elemento)
+
+        if len(lista_indices_mutant) >= 2:
+            if indice_ataque_raza_mutant < maximo_stat:
+                sc.imprimir_indices(lista_indices_mutant, matriz)
+        else:
+            unico_elemento =  int(lista_indices_mutant)
+            sc.mostrar_elemento_matriz(matriz, unico_elemento)
+    
 
 def ordenar_por_inteligencia(matriz: list[list]):
 

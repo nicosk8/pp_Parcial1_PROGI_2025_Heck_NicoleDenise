@@ -17,7 +17,7 @@ def validar_num_minmax(texto: str, minimo: int, maximo: int) -> int:
     """
     input_usuario_str = input(texto)
     input_usuario = int(input_usuario_str)
-    while minimo > input_usuario or input_usuario > maximo:
+    while (minimo > input_usuario or input_usuario > maximo) or input_usuario_str == '':
         print('SYSTEM ERROR: Ingrese un numero valido')
         input_usuario_str = validar_num_minmax(texto, minimo, maximo)
     return input_usuario

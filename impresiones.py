@@ -1,6 +1,6 @@
 # PP Parcial 1 - Impresiones.
 
-def mostrar_elemento_matriz(matriz: list [list],indice_elemento):
+def mostrar_elemento_matriz(matriz: list [list],indice_elemento: int):
     """ Muestra un unico elemento de una lista con los datos formateados
     :params: matriz -> set de datos
              indice -> indice a mostrar 
