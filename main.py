@@ -10,8 +10,6 @@ from utn_fra.datasets import (
 
 import app
 
-
-
 app.aplicacion(lista_nombre_heroes_pp,
     lista_alias_pp, 
     lista_razas_pp, 

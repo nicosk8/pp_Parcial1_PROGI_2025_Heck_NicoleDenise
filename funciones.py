@@ -752,7 +752,79 @@ def ordenar_por_menos_inteligente_not_human(matriz: list[list], lista_razas_pp: 
     
     titulo = f'Ordenar "ASC" por -> Menor inteligencia de los raza not Human: {len(indices_not_human)} registros impresos.'
     print(titulo)
+
+def agrupar_por_razas(matriz: list[list], lista_razas_pp: list, valor: str) -> list[list]:
+    lista_indices = filtrar_indices_lista(valor, lista_razas_pp)
+    matriz_auxiliar = obtener_matriz_filtrada(matriz, lista_indices)
+    return matriz_auxiliar
+
+def concatenar_matriz(lista_matrices: list[list]) -> list[list]:
+
+    matriz_concatenada = []
+    for i in range(len(lista_matrices)) :
+        matriz_concatenada.append(lista_matrices[i])
+
+    return matriz_concatenada
+
+def ordenar_personalizado(matriz: list[list], lista_razas_pp: list):
+
+    # Agrupo por razas.
+    matriz_raza_desconocido = agrupar_por_razas(matriz, lista_razas_pp, valor = 'Desconocido')
+    matriz_raza_human = agrupar_por_razas(matriz, lista_razas_pp, valor = 'Human')
+    matriz_raza_animal = agrupar_por_razas(matriz, lista_razas_pp, valor = 'Animal')
+    matriz_raza_mutant = agrupar_por_razas(matriz, lista_razas_pp, valor = 'Mutant')
+    matriz_raza_saiyan = agrupar_por_razas(matriz, lista_razas_pp, valor = 'Saiyan')
+
+    # Aplico ordenamiento DES por cantidad de poder, a cada uno de los grupos que tengo.
+    sort.order_selection_matriz(matriz_raza_desconocido, 
+                                mapear_valor('poder'), 
+                                valor='None', 
+                                tipo_orden = 'DES')
     
+    sort.order_selection_matriz(matriz_raza_human, 
+                                mapear_valor('poder'), 
+                                valor='None', 
+                                tipo_orden = 'DES')
+    
+    sort.order_selection_matriz(matriz_raza_animal, 
+                                mapear_valor('poder'), 
+                                valor='None', 
+                                tipo_orden = 'DES')
+    
+    sort.order_selection_matriz(matriz_raza_mutant, 
+                                mapear_valor('poder'), 
+                                valor='None', 
+                                tipo_orden = 'DES')
+    
+    sort.order_selection_matriz(matriz_raza_saiyan, 
+                                mapear_valor('poder'), 
+                                valor='None', 
+                                tipo_orden = 'DES')
+
+    lista_matrices = [matriz_raza_desconocido,
+                      matriz_raza_human,
+                      matriz_raza_animal,
+                      matriz_raza_mutant,
+                      matriz_raza_saiyan ]    
+    
+    #matriz_concatenada = concatenar_matriz(lista_matrices)
+    #sort.order_selection_matriz_alfabeticamente(matriz_concatenada, 
+    #                                       mapear_valor('raza'), 
+    #                                       valor='None', 
+    #                                       tipo_orden = 'ASC')
+    titulo =\
+    """\nOrdenar personalizado: Todos los personajes deben estar agrupados por Raza. 
+Cada personaje de cada raza, debe estar ordenado según poder DES en su raza.     
+Las Razas en la matriz deben aparecer de forma Alfabética                        \n\n
+    """
+    print(titulo)
+    for i in range(len(lista_matrices)):
+        sc.mostrar_datos(lista_matrices[i])
+    
+     
+
+    pass
+
 def ordenar_trasponer_datos(matriz: list[list]):
 
     """ Ordena y traspone datos :params: matriz -> set de datos""" 
@@ -765,3 +837,4 @@ def ordenar_trasponer_datos(matriz: list[list]):
     sc.mostrar_datos(matriz)
     mensaje = '\nLista ordenada por raza y en orden afabetico -> "ASC".\n\n '
     print(mensaje)
+

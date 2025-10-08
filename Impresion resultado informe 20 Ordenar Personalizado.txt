@@ -1,0 +1,169 @@
+1 | Stardust,Entity Lambda-Zero,Desconocido,Masculino,100,88,100
+2 | Match,Superboy,Desconocido,Masculino,100,75,83
+3 | Zoom,No Tiene,Desconocido,Masculino,100,50,100
+4 | Firebird,Pajaro Del Fuego,Desconocido,No-Binario,100,38,40
+5 | Claire Bennet,Vivian Lewis,Desconocido,No-Binario,90,38,12
+6 | Destroyer,No Tiene,Desconocido,Masculino,85,50,58
+7 | Ares,Mars,Desconocido,Masculino,84,75,35
+8 | Synch,No Tiene,Desconocido,Masculino,74,75,23
+9 | Ego,The Living Planet,Desconocido,No-Binario,71,88,83
+10 | Warlock,Him,Desconocido,Masculino,71,88,79
+11 | Doppelganger,Spider-Doppelganger,Desconocido,Masculino,69,8,60
+12 | Magog,No Tiene,Desconocido,Masculino,66,50,23
+13 | Hydro-Man,Morrie,Desconocido,Masculino,66,38,25
+14 | Leech,No Tiene,Desconocido,Masculino,62,25,12
+15 | Spider-Woman III,No Tiene,Desconocido,No-Binario,60,50,27
+16 | Plastique,No Tiene,Desconocido,No-Binario,60,50,23
+17 | Angel Salvadore,Tempest,Desconocido,No-Binario,56,38,28
+18 | Armor,Kid,Desconocido,No-Binario,55,50,12
+19 | Venom II,No Tiene,Desconocido,Masculino,54,50,47
+20 | Molten Man,No Tiene,Desconocido,Masculino,53,50,23
+21 | Callisto,No Tiene,Desconocido,No-Binario,52,63,23
+22 | Green Goblin II,No Tiene,Desconocido,Masculino,44,75,37
+23 | Atom Girl,Shrinking Violet,Desconocido,No-Binario,38,38,23
+24 | Niki Sanders,Gina,Desconocido,No-Binario,37,63,35
+25 | Huntress,Mafia Princess,Desconocido,No-Binario,34,69,23
+26 | Sage,No Tiene,Desconocido,No-Binario,28,75,12
+27 | Multiple Man,No Tiene,Desconocido,Masculino,28,63,23
+28 | Sobek,Sobek the Talking Crocodile; The Unknown in Formless Time Before Time; Famine,Desconocido,Masculino,20,50,23
+29 | JJ Powell,No Tiene,Desconocido,Masculino,14,88,8
+30 | Ms Marvel II,She-Thing,Desconocido,No-Binario,11,38,23
+31 | Riddler,E. Nigma,Desconocido,Masculino,10,100,12
+1 | Mister Sinister,Arnold Bocklin,Human / Altered,Masculino,100,100,46
+2 | Captain Marvel,Binary,Human-Kree,No-Binario,100,84,71
+3 | Enchantress,Anita Soulfeeda,Human,No-Binario,100,63,25
+4 | Firestorm,Flamehead,Human,Masculino,100,38,58
+5 | Jessica Cruz,Green Lantern,Human,No-Binario,100,56,46
+6 | War Machine,Rhodey,Human,Masculino,100,63,63
+7 | Hancock,No Tiene,Human,Masculino,100,63,67
+8 | Flash III,Kid Flash I,Human,Masculino,100,63,100
+9 | Ray,No Tiene,Human,Masculino,100,50,92
+10 | Vibe,No Tiene,Human,Masculino,99,50,17
+11 | Absorbing Man,Lightningbolt,Human,Masculino,98,38,25
+12 | Iron Fist,Daniel Thomas Rand,Human,Masculino,95,75,33
+13 | Mysterio,Nicholas Macabes,Human,Masculino,82,81,17
+14 | Cheetah III,Barbara Minerva,Human,No-Binario,78,88,88
+15 | Darkhawk,Edge-Man,Human,Masculino,74,50,33
+16 | Longshot,The Lucky One,Human,Masculino,71,50,27
+17 | Boba Fett,Teff,Human / Clone,Masculino,68,63,38
+18 | Banshee,Death,Human,Masculino,63,50,58
+19 | Elektra,Erynys (evil self),Human,No-Binario,59,63,30
+20 | Deadshot,Orlando Furioso,Human,Masculino,55,50,23
+21 | Judge Dredd,Joe,Human,Masculino,52,75,38
+22 | Tiger Shark,Arlys Tigershark,Human,Masculino,51,38,46
+23 | White Canary,Sara Lance,Human,No-Binario,49,63,33
+24 | Batgirl IV,Kasumi,Human,No-Binario,46,69,27
+25 | She-Hulk,Jade Giantess,Human,No-Binario,40,81,42
+26 | Mister Freeze,Doctor Zero,Human,Masculino,37,75,12
+9 | Ray,No Tiene,Human,Masculino,100,50,92
+10 | Vibe,No Tiene,Human,Masculino,99,50,17
+11 | Absorbing Man,Lightningbolt,Human,Masculino,98,38,25
+12 | Iron Fist,Daniel Thomas Rand,Human,Masculino,95,75,33
+13 | Mysterio,Nicholas Macabes,Human,Masculino,82,81,17
+14 | Cheetah III,Barbara Minerva,Human,No-Binario,78,88,88
+15 | Darkhawk,Edge-Man,Human,Masculino,74,50,33
+16 | Longshot,The Lucky One,Human,Masculino,71,50,27
+17 | Boba Fett,Teff,Human / Clone,Masculino,68,63,38
+18 | Banshee,Death,Human,Masculino,63,50,58
+19 | Elektra,Erynys (evil self),Human,No-Binario,59,63,30
+20 | Deadshot,Orlando Furioso,Human,Masculino,55,50,23
+21 | Judge Dredd,Joe,Human,Masculino,52,75,38
+22 | Tiger Shark,Arlys Tigershark,Human,Masculino,51,38,46
+23 | White Canary,Sara Lance,Human,No-Binario,49,63,33
+24 | Batgirl IV,Kasumi,Human,No-Binario,46,69,27
+25 | She-Hulk,Jade Giantess,Human,No-Binario,40,81,42
+26 | Mister Freeze,Doctor Zero,Human,Masculino,37,75,12
+14 | Cheetah III,Barbara Minerva,Human,No-Binario,78,88,88
+15 | Darkhawk,Edge-Man,Human,Masculino,74,50,33
+16 | Longshot,The Lucky One,Human,Masculino,71,50,27
+17 | Boba Fett,Teff,Human / Clone,Masculino,68,63,38
+18 | Banshee,Death,Human,Masculino,63,50,58
+19 | Elektra,Erynys (evil self),Human,No-Binario,59,63,30
+20 | Deadshot,Orlando Furioso,Human,Masculino,55,50,23
+21 | Judge Dredd,Joe,Human,Masculino,52,75,38
+22 | Tiger Shark,Arlys Tigershark,Human,Masculino,51,38,46
+23 | White Canary,Sara Lance,Human,No-Binario,49,63,33
+24 | Batgirl IV,Kasumi,Human,No-Binario,46,69,27
+25 | She-Hulk,Jade Giantess,Human,No-Binario,40,81,42
+26 | Mister Freeze,Doctor Zero,Human,Masculino,37,75,12
+20 | Deadshot,Orlando Furioso,Human,Masculino,55,50,23
+21 | Judge Dredd,Joe,Human,Masculino,52,75,38
+22 | Tiger Shark,Arlys Tigershark,Human,Masculino,51,38,46
+23 | White Canary,Sara Lance,Human,No-Binario,49,63,33
+24 | Batgirl IV,Kasumi,Human,No-Binario,46,69,27
+25 | She-Hulk,Jade Giantess,Human,No-Binario,40,81,42
+26 | Mister Freeze,Doctor Zero,Human,Masculino,37,75,12
+27 | Nightwing,The Worlds Greatest Acrobat,Human,Masculino,36,88,33
+22 | Tiger Shark,Arlys Tigershark,Human,Masculino,51,38,46
+23 | White Canary,Sara Lance,Human,No-Binario,49,63,33
+24 | Batgirl IV,Kasumi,Human,No-Binario,46,69,27
+25 | She-Hulk,Jade Giantess,Human,No-Binario,40,81,42
+26 | Mister Freeze,Doctor Zero,Human,Masculino,37,75,12
+27 | Nightwing,The Worlds Greatest Acrobat,Human,Masculino,36,88,33
+28 | Doc Samson,No Tiene,Human / Radiation,Masculino,36,75,33
+25 | She-Hulk,Jade Giantess,Human,No-Binario,40,81,42
+26 | Mister Freeze,Doctor Zero,Human,Masculino,37,75,12
+27 | Nightwing,The Worlds Greatest Acrobat,Human,Masculino,36,88,33
+28 | Doc Samson,No Tiene,Human / Radiation,Masculino,36,75,33
+27 | Nightwing,The Worlds Greatest Acrobat,Human,Masculino,36,88,33
+28 | Doc Samson,No Tiene,Human / Radiation,Masculino,36,75,33
+29 | Batman II,Dick Grayson,Human,Masculino,36,88,33
+28 | Doc Samson,No Tiene,Human / Radiation,Masculino,36,75,33
+29 | Batman II,Dick Grayson,Human,Masculino,36,88,33
+30 | Black Widow,Yelena Belova,Human,No-Binario,36,75,33
+29 | Batman II,Dick Grayson,Human,Masculino,36,88,33
+30 | Black Widow,Yelena Belova,Human,No-Binario,36,75,33
+30 | Black Widow,Yelena Belova,Human,No-Binario,36,75,33
+31 | Robin,Renegade,Human,Masculino,32,88,27
+32 | Mr Incredible,The Hero's Hero,Human,Masculino,29,50,33
+33 | Hawkeye,Ronin,Human,Masculino,29,56,21
+34 | Red Robin,Batman,Human,Masculino,29,81,27
+35 | Robin II,Arkham Knight,Human,Masculino,28,75,27
+36 | Ra's Al Ghul,Demon's Head,Human,Masculino,27,100,32
+37 | Speedy,Thea Merlyn,Human,No-Binario,26,50,33
+38 | Kathryn Janeway,No Tiene,Human,No-Binario,21,75,21
+39 | Question,Vic Sage,Human,Masculino,20,81,27
+34 | Red Robin,Batman,Human,Masculino,29,81,27
+35 | Robin II,Arkham Knight,Human,Masculino,28,75,27
+36 | Ra's Al Ghul,Demon's Head,Human,Masculino,27,100,32
+37 | Speedy,Thea Merlyn,Human,No-Binario,26,50,33
+38 | Kathryn Janeway,No Tiene,Human,No-Binario,21,75,21
+39 | Question,Vic Sage,Human,Masculino,20,81,27
+40 | Kid Flash,Kid Lantern,Human,Masculino,20,25,92
+41 | Ronin,Superhuman Cellblock Prisoner 334556,Human,Masculino,13,56,21
+38 | Kathryn Janeway,No Tiene,Human,No-Binario,21,75,21
+39 | Question,Vic Sage,Human,Masculino,20,81,27
+40 | Kid Flash,Kid Lantern,Human,Masculino,20,25,92
+41 | Ronin,Superhuman Cellblock Prisoner 334556,Human,Masculino,13,56,21
+42 | Walrus,No Tiene,Human,Masculino,11,50,8
+40 | Kid Flash,Kid Lantern,Human,Masculino,20,25,92
+41 | Ronin,Superhuman Cellblock Prisoner 334556,Human,Masculino,13,56,21
+42 | Walrus,No Tiene,Human,Masculino,11,50,8
+43 | Clock King,Tempus Fugit,Human,Masculino,7,75,17
+42 | Walrus,No Tiene,Human,Masculino,11,50,8
+43 | Clock King,Tempus Fugit,Human,Masculino,7,75,17
+43 | Clock King,Tempus Fugit,Human,Masculino,7,75,17
+44 | Stormtrooper,No Tiene,Human,Masculino,5,10,8
+1 | King Kong,King of Skull Island,Animal,Masculino,47,56,71
+1 | Evil Deadpool,Dreadpool,Mutant,Masculino,100,69,50
+2 | Scarlet Witch,Ana Maximoff,Mutant,No-Binario,100,100,29
+3 | Shadowcat,Kitty Pryde,Mutant,No-Binario,69,88,21
+4 | Plantman,Blackheath,Mutant,Masculino,61,63,25
+5 | Angel Dust,Dusty,Mutant,No-Binario,17,38,23
+1 | Vegeta,Makita (Hebrew dub),Saiyan,Masculino,100,81,92
+2 | Goku,Son-Goku,Saiyan,Masculino,100,56,75
+
+Impresion de matriz concatenada ↑ (sin appendear)  
+|
+|
+|
+|
+Impresion de matriz concatenada ↓ (unificacion de todas las listas de matrices en una matriz unica): 
+
+1 | ['Stardust', 'Match', 'Zoom', 'Firebird', 'Claire Bennet', 'Destroyer', 'Ares', 'Synch', 'Ego', 'Warlock', 'Doppelganger', 'Magog', 'Hydro-Man', 'Leech', 'Spider-Woman III', 'Plastique', 'Angel Salvadore', 'Armor', 'Venom II', 'Molten Man', 'Callisto', 'Green Goblin II', 'Atom Girl', 'Niki Sanders', 'Huntress', 'Sage', 'Multiple Man', 'Sobek', 'JJ Powell', 'Ms Marvel II', 'Riddler'],['Mister Sinister', 'Captain Marvel', 'Enchantress', 'Firestorm', 'Jessica Cruz', 'War Machine', 'Hancock', 'Flash III', 'Ray', 'Vibe', 'Absorbing Man', 'Iron Fist', 'Mysterio', 'Cheetah III', 'Darkhawk', 'Longshot', 'Boba Fett', 'Banshee', 'Elektra', 'Deadshot', 'Judge Dredd', 'Tiger Shark', 'White Canary', 'Batgirl IV', 'She-Hulk', 'Mister Freeze', 'Nightwing', 'Doc Samson', 'Batman II', 'Black Widow', 'Robin', 'Mr Incredible', 'Hawkeye', 'Red Robin', 'Robin II', "Ra's Al Ghul", 'Speedy', 'Kathryn Janeway', 'Question', 'Kid Flash', 'Ronin', 'Walrus', 'Clock King', 'Stormtrooper'],['King Kong'],['Evil Deadpool', 'Scarlet Witch', 'Shadowcat', 'Plantman', 'Angel Dust'],['Vegeta', 'Goku']
+2 | ['Entity Lambda-Zero', 'Superboy', 'No Tiene', 'Pajaro Del Fuego', 'Vivian Lewis', 'No Tiene', 'Mars', 'No Tiene', 'The Living Planet', 'Him', 'Spider-Doppelganger', 'No Tiene', 'Morrie', 'No Tiene', 'No Tiene', 'No Tiene', 'Tempest', 'Kid', 'No Tiene', 'No Tiene', 'No Tiene', 'No Tiene', 'Shrinking Violet', 'Gina', 'Mafia Princess', 'No Tiene', 'No Tiene', 'Sobek the Talking Crocodile; The Unknown in Formless Time Before Time; Famine', 'No Tiene', 'She-Thing', 'E. Nigma'],['Arnold Bocklin', 'Binary', 'Anita Soulfeeda', 'Flamehead', 'Green Lantern', 'Rhodey', 'No Tiene', 'Kid Flash I', 'No Tiene', 'No Tiene', 'Lightningbolt', 'Daniel Thomas Rand', 'Nicholas Macabes', 'Barbara Minerva', 'Edge-Man', 'The Lucky One', 'Teff', 'Death', 'Erynys (evil self)', 'Orlando Furioso', 'Joe', 'Arlys Tigershark', 'Sara Lance', 'Kasumi', 'Jade Giantess', 'Doctor Zero', 'The Worlds Greatest Acrobat', 'No Tiene', 'Dick Grayson', 'Yelena Belova', 'Renegade', "The Hero's Hero", 'Ronin', 'Batman', 'Arkham Knight', "Demon's Head", 'Thea Merlyn', 'No Tiene', 'Vic Sage', 'Kid Lantern', 'Superhuman Cellblock Prisoner 334556', 'No Tiene', 'Tempus Fugit', 'No Tiene'],['King of Skull Island'],['Dreadpool', 'Ana Maximoff', 'Kitty Pryde', 'Blackheath', 'Dusty'],['Makita (Hebrew dub)', 'Son-Goku']
+3 | ['Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido', 'Desconocido'],['Human / Altered', 'Human-Kree', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human / Clone', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human / Radiation', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human', 'Human'],['Animal'],['Mutant', 'Mutant', 'Mutant', 'Mutant', 'Mutant'],['Saiyan', 'Saiyan']
+4 | ['Masculino', 'Masculino', 'Masculino', 'No-Binario', 'No-Binario', 'Masculino', 'Masculino', 'Masculino', 'No-Binario', 'Masculino', 'Masculino', 'Masculino', 'Masculino', 'Masculino', 'No-Binario', 'No-Binario', 'No-Binario', 'No-Binario', 'Masculino', 'Masculino', 'No-Binario', 'Masculino', 'No-Binario', 'No-Binario', 'No-Binario', 'No-Binario', 'Masculino', 'Masculino', 'Masculino', 'No-Binario', 'Masculino'],['Masculino', 'No-Binario', 'No-Binario', 'Masculino', 'No-Binario', 'Masculino', 'Masculino', 'Masculilino', 'Masculino', 'Masculino', 'No-Binario', 'Masculino', 'Masculino', 'Masculino', 'No-Binario', 'No-Binario', 'No-Binario', 'Masculino', 'Masculino', 'Masculino', 'Masculino', 'No-Binario', 'Masculino', 'Masculino', 'Masculino', 'Masculino', 'Masculino', 'Masculino', 'No-Binario', 'No-Binario', 'Masculino', 'Masculino', 'Masculino', 'Masculino', 'Masculino', 'Masculino'],['Masculino'],['Masculino', 'No-Binario', 'No-Binario', 'Masculino', 'No-Binario'],['Masculino', 'Masculino']
+5 | [100, 100, 100, 100, 90, 85, 84, 74, 71, 71, 69, 66, 66, 62, 60, 60, 56, 55, 54, 53, 52, 44, 38, 37, 34, 28, 28, 20, 14, 11, 10],[100, 100, 100, 100, 100, 100, 100, 100, 100, 99, 98, 95, 82, 78, 74, 71, 68, 63, 59, 55, 52, 51, 49, 46, 40, 37, 36, 36, 36, 36, 32, 29, 29, 29, 28, 27, 26, 21, 20, 20, 13, 11, 7, 5],[47],[100, 100, 69, 61, 17],[100, 100]
+6 | [88, 75, 50, 38, 38, 50, 75, 75, 88, 88, 8, 50, 38, 25, 50, 50, 38, 50, 50, 50, 63, 75, 38, 63, 69, 75, 63, 50, 88, 38, 100],[100, 84, 63, 38, 56, 63, 63, 63, 50, 50, 38, 75, 81, 88, 50, 50, 63, 50, 63, 50, 75, 38, 63, 69, 81, 75, 88, 75, 88, 75, 88, 50, 56, 81, 75, 100, 50, 75, 81, 25, 56, 50, 75, 10],[56],[69, 100, 88, 63, 38],[81, 56]
+7 | [100, 83, 100, 40, 12, 58, 35, 23, 83, 79, 60, 23, 25, 12, 27, 23, 28, 12, 47, 23, 23, 37, 23, 35, 23, 12, 23, 23, 8, 23, 12],[46, 71, 25, 58, 46, 63, 67, 100, 92, 17, 25, 33, 17, 88, 33, 27, 38, 58, 30, 23, 38, 46, 33, 27, 42, 12, 33, 33, 33, 33, 27, 33, 21, 27, 27, 32, 33, 21, 27, 92, 21, 8, 17, 8],[71],[50, 29, 21, 25, 23],[92, 75]

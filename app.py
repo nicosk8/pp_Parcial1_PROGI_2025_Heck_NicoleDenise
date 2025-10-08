@@ -214,7 +214,9 @@ def aplicacion(lista_nombre_heroes_pp: list,
             case 20:
 
                 if matriz_cargada: 
-                    pass
+
+                    fun.ordenar_personalizado(matriz_personajes, lista_razas_pp)
+                    
                 else: print(mensaje_error)
 
             case 21:
